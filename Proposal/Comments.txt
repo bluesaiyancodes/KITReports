@@ -1,0 +1,107 @@
+* 평가의견 관련 안내
+- 중견연구 1-1 선정평가는 다섯명의 평가위원이 독립적으로 연구계획서에 대한 평가를 실시하여 점수와 의견을 제시하였습니다.
+- 선정여부는 최고, 최저점을 제외한 평가 점수를 기반으로 이루어집니다.
+- 평가의견은 추후 과제 신청, 연구진행에 도움이 되실 수 있도록 제공해 드리는 사항이며, 평가자의 견해에 따라서 다소 상충 될 수 있음을 안내드립니다.
+
+----------------------
+평가자1 의견
+----------------------
+- 본 연구는 음성 신호의 잡음 제거를 위한 Wavelet-Diffusion-variational autoencoder 통합 모델[참고문헌 27]의 접근방식으로 기존의 사례를 기반으로 음성에서 잡음제거를 통한 질향상에 기여할 것으로 보여짐. 
+- 대체로 선행연구에 대한 충분한 근거와 합리적인 연구방법을 적용하였고 음성신호처리에서 잡음 제거기술 발전에 기여할 것으로 사료됨
+- 전체적으로 연구 주제의 창의성과 도전성은 다소 미흡해 보이고, 제안서에 학생의 인건비 산출내역은 잘못 표시되었음. 
+- 연구방법의 최신성이 다소 떨어져 보임
+
+----------------------
+평가자2 의견
+----------------------
+- 음질 향상을 위해 잡음을 제거하기 위해 인공신경망을 활용하는 과정에서 STFT 대신 CWT 기술을 이용하여 음성의 해상도를 높이겠다는 접근은 긍정적으로 보임
+- DWT 기술과 Diffusion 모델, VAE 모델이 어떻게 통합되어 음질을 향상시키는 지에 대해 수식을 통한 설명을 제공하는 것에서 더 나가 도식도를 추가하여 설명하는 것이 더 효과적일 것으로 사료됨
+- 본 연구와 연관된 연구책임자의 대표 논문 실적이 상대적 열위에 있음
+
+----------------------
+평가자3 의견
+----------------------
+- 음성의 잡음을 처리하기 위한 방법으로 waive-diffusion 모델을 제사하여 음성에서 잡음을 제거하고 꺠끗한 음성을 생성하는 연구를 제시하고 있음.
+- 연구주제의 제시는 명확하는 연구 내용과 방법의 제시가 기존의 방법이 이론적 내용만 담고 있어 구체적으로 기술되어 있지 않음. 
+- 기존 연구와 논문의 분야가 매우 다양하여 연구의 전문분야를 확인하기에 모호함.
+
+----------------------
+평가자4 의견
+----------------------
+- 풀고자 하는 연구 주제를 명확히 설명하고 3년 동안 단계별로 개발하고자 하는 내용을 명확히 설명하였음.
+- 배경 지식에 대한 설명을 비교적 자세히 기술하였음.
+- 연구결과의 활용도 잘 설명되어 이 연구의 필요성을 다시 한번 확인할 수 있음.
+- 연구책임자의 대표논문이 제시한 연구주제와 뚜렷한 상관관계가 없어 연구책임자의 이 분야에 대한 연구역량을 확신하기 힘듦.
+- VAE와 diffusion model을 왜 합쳐야 하고 (차원 축소가 이유의 다인지? 그럼 왜 VAE여야 하는지?), 어떻게 합칠 것인지에 대한 설명이 부족함. (diffusion 앞에 VAE를 단순히 붙이는 건지?) 제안 단계이므로 아주 detail하지는 않더라도 대략적인 idea와 설명이 필요함.
+- 제안하는 모델의 창의성이 잘 안 보임. 
+- Diffusion model의 한 application으로만 보임. 왜 풀고자 하는 문제에서 제안하는 방식이 뛰어난지에 대한 기술이 부족함.
+
+Minor:
+- Evluation metric을 제안서 굳이 적을 필요는 없을 것 같음. 그냥 참고문헌만 달고 다른 부분을 충실히 기술하는 것이 좋음.
+
+----------------------
+평가자5 의견
+----------------------
+- 연구가 많이 이루어지고 있는 음성 강화(음성 노이즈 제거)분야에 대해서 기존 연구 대비 개선된 성능을 달성하는 것을 목표로 하는 연구과제
+- 단계 별 연구 계획이 체계적으로 구성되어 제시됨.
+- 연구책임자가 해당 주제 관련해서 다양한 연구 경험을 갖추고 있음
+- 기존 기술 대비 성능 개선 시 현실 활용도가 높을 것으로 예상함.
+- 음성 강화(음성 노이즈 제거)는 기존 연구가 많이 이루어지고 있는 주제이니만큼, 기존의 연구방법론들을 간단히 소개하고 그에 대한 본 연구의 우수성과 차별점을 강조해주면 더 좋을 것임.
+- 본 연구에서 주요 접근방향으로 제시된 방법론인 Wavelet Transformation, Diffusion Model, VAE 는 이미 음성강화 분야에 적용이 된 사례들이 있으며 이에 대비해서 3개를 결합하는게 어떠한 강점이 있을지에 의문.
+
+
+
+
+
+
+
+* Guidance on evaluation opinions
+- For the mid-career research 1-1 selection evaluation, five evaluators independently evaluated the research plan and presented scores and opinions.
+- Selection is based on evaluation scores excluding the highest and lowest scores.
+- Evaluation opinions are provided to help you apply for assignments and conduct research in the future, and we inform you that there may be some conflict depending on the opinions of the evaluators.
+
+----------------------
+Reviewer 1 Opinion
+----------------------
+- This study is an approach of the Wavelet-Diffusion-variational autoencoder integration model [Reference 27] for noise removal of voice signals, and is expected to contribute to quality improvement through noise removal in voice based on existing cases.
+- In general, sufficient grounds and reasonable research methods for previous studies were applied, and it is considered to contribute to the development of noise cancellation technology in speech signal processing.
+- Overall, the creativity and challenge of the research topic seemed to be somewhat insufficient, and the calculation details of the student's labor cost were incorrectly indicated in the proposal.
+- The state-of-the-art of the research method seems to be somewhat lacking
+
+----------------------
+Evaluator 2 Opinion
+----------------------
+- In the process of using an artificial neural network to remove noise to improve sound quality, the approach to increase the resolution of voice by using CWT technology instead of STFT seems positive.
+- It is thought that it would be more effective to explain how DWT technology, Diffusion model, and VAE model are integrated to improve sound quality by adding a schematic diagram rather than providing an explanation through formulas.
+- The performance of representative thesis of the principal researcher related to this study is relatively inferior
+
+----------------------
+evaluator3 opinion
+----------------------
+- As a method for processing noise in voice, a waive-diffusion model is proposed to remove noise from voice and present a study to generate clean voice.
+- As for the presentation of research topics, the presentation of clear research contents and methods is not specifically described as the existing methods contain only theoretical contents.
+- The fields of existing research and thesis are very diverse, so it is ambiguous to identify the specialized field of research.
+
+----------------------
+Assessor4 Opinion
+----------------------
+- The research topic to be solved was clearly explained and the content to be developed step by step over the course of 3 years was clearly explained.
+- Relatively detailed description of background knowledge.
+- The use of the research results is well explained, confirming the necessity of this research once again.
+- It is difficult to be certain of the principal researcher's research competence in this field because there is no clear correlation with the research topic presented by the principal researcher's thesis.
+- Why should VAE and diffusion model be combined? (Is VAE simply added in front of diffusion?) Since it is in the proposal stage, rough ideas and explanations are needed, even if not very detailed.
+- The creativity of the proposed model is not well seen.
+- Appears only as one application of diffusion model. Lack of knowledge about why the proposed method is superior in the problem to be solved.
+
+Minor:
+- I don't think it's necessary to write an evolution metric in the proposal. It is better to just give references and describe the other parts faithfully.
+
+----------------------
+Reviewer5 comments
+----------------------
+- A research task that aims to achieve improved performance compared to existing research in the field of voice enhancement (removal of voice noise), which has been extensively researched
+- The research plan for each stage is systematically organized and presented.
+- The research director has various research experiences related to the subject
+- It is expected that practical utilization will be high when performance is improved compared to existing technologies.
+- As voice enhancement (removal of voice noise) is a subject that has been extensively researched, it would be better if the existing research methodologies were briefly introduced and the excellence and differentiation of this study were emphasized.
+- Wavelet Transformation, Diffusion Model, and VAE, which are methodologies presented as major approaches in this study, have already been applied to the field of voice reinforcement.
