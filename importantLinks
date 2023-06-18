@@ -1,0 +1,53 @@
+#### Dice / IoU(Jaccord) coefficient
+
+https://medium.com/mlearning-ai/understanding-evaluation-metrics-in-medical-image-segmentation-d289a373a3f
+
+https://medium.com/aaweg-i-nterview/computer-vision-iou-jaccards-index-dice-score-coefficient-861c4a496b2b
+
+
+
+#### Loss Functions
+
+https://github.com/JunMa11/SegLoss
+
+https://medium.com/@junma11/loss-functions-for-medical-image-segmentation-a-taxonomy-cefa5292eec0
+
+https://www.kaggle.com/code/sungjunghwan/loss-function-of-image-segmentation
+
+
+
+#### RegionWise loss (most recent paper)
+
+https://github.com/jmlipman/RegionWiseLoss
+
+https://www.sciencedirect.com/science/article/pii/S0031320322006872
+
+
+
+#### Boundary Loss
+
+https://github.com/LIVIAETS/boundary-loss
+
+
+
+#### Loss Function
+
+https://medium.com/@zergtant/use-weighted-loss-function-to-solve-imbalanced-data-classification-problems-749237f38b75
+
+https://medium.com/cuenex/advanced-evaluation-metrics-for-imbalanced-classification-models-ee6f248c90ca
+
+https://towardsdatascience.com/implementing-custom-loss-functions-in-pytorch-50739f9e0ee1
+
+
+
+#### Activation Function and Weights
+
+https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_initialization_activation_functions/
+
+https://lightning.ai/docs/pytorch/stable/notebooks/course_UvA-DL/02-activation-functions.html
+
+
+
+#### test time augmentation
+
+https://github.com/qubvel/ttach
