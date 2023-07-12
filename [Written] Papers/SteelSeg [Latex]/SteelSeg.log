@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.11)  11 JUL 2023 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.12)  12 JUL 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -79,7 +79,11 @@ tex.def
 File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count197
 \l__pdf_internal_box=\box51
-) (SteelSeg.aux)
+) (SteelSeg.aux
+
+LaTeX Warning: Label `fig:combined' multiply defined.
+
+)
 \openout1 = `SteelSeg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -145,48 +149,60 @@ File: images/1_label.png Graphic file (type png)
 Package pdftex.def Info: images/1_label.png  used on input line 94.
 (pdftex.def)             Requested size: 155.24895pt x 153.3654pt.
  [6 <./images/1.png> <./images/1_label.png>]
-File: images/1.png Graphic file (type png)
-<use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 113.
-(pdftex.def)             Requested size: 68.99895pt x 68.1628pt.
-File: images/1_label.png Graphic file (type png)
-<use images/1_label.png>
-Package pdftex.def Info: images/1_label.png  used on input line 120.
-(pdftex.def)             Requested size: 68.99895pt x 68.15822pt.
-File: images/1.png Graphic file (type png)
-<use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 129.
-(pdftex.def)             Requested size: 68.99895pt x 68.1628pt.
-File: images/1_label.png Graphic file (type png)
-<use images/1_label.png>
-Package pdftex.def Info: images/1_label.png  used on input line 136.
-(pdftex.def)             Requested size: 68.99895pt x 68.15822pt.
-File: images/1.png Graphic file (type png)
-<use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 145.
-(pdftex.def)             Requested size: 68.99895pt x 68.1628pt.
-File: images/1_label.png Graphic file (type png)
-<use images/1_label.png>
-Package pdftex.def Info: images/1_label.png  used on input line 152.
-(pdftex.def)             Requested size: 68.99895pt x 68.15822pt.
-File: images/1.png Graphic file (type png)
-<use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 161.
-(pdftex.def)             Requested size: 68.99895pt x 68.1628pt.
-File: images/1_label.png Graphic file (type png)
-<use images/1_label.png>
-Package pdftex.def Info: images/1_label.png  used on input line 168.
-(pdftex.def)             Requested size: 68.99895pt x 68.15822pt.
-File: images/1.png Graphic file (type png)
-<use images/1.png>
-Package pdftex.def Info: images/1.png  used on input line 177.
-(pdftex.def)             Requested size: 68.99895pt x 68.1628pt.
-File: images/1_label.png Graphic file (type png)
-<use images/1_label.png>
-Package pdftex.def Info: images/1_label.png  used on input line 184.
-(pdftex.def)             Requested size: 68.99895pt x 68.15822pt.
- (SteelSeg.bbl
-[7]
+<images/x3000/1.png, id=32, 963.6pt x 722.7pt>
+File: images/x3000/1.png Graphic file (type png)
+<use images/x3000/1.png>
+Package pdftex.def Info: images/x3000/1.png  used on input line 113.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/x3000/1_label.png, id=33, 963.6pt x 722.7pt>
+File: images/x3000/1_label.png Graphic file (type png)
+<use images/x3000/1_label.png>
+Package pdftex.def Info: images/x3000/1_label.png  used on input line 119.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/x5000/1.png, id=34, 963.6pt x 722.7pt>
+File: images/x5000/1.png Graphic file (type png)
+<use images/x5000/1.png>
+Package pdftex.def Info: images/x5000/1.png  used on input line 126.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/x5000/1_label.png, id=35, 963.6pt x 722.7pt>
+File: images/x5000/1_label.png Graphic file (type png)
+<use images/x5000/1_label.png>
+Package pdftex.def Info: images/x5000/1_label.png  used on input line 132.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/A-type/1.png, id=36, 963.6pt x 722.7pt>
+File: images/A-type/1.png Graphic file (type png)
+<use images/A-type/1.png>
+Package pdftex.def Info: images/A-type/1.png  used on input line 139.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/A-type/1_label.png, id=37, 963.6pt x 722.7pt>
+File: images/A-type/1_label.png Graphic file (type png)
+<use images/A-type/1_label.png>
+Package pdftex.def Info: images/A-type/1_label.png  used on input line 145.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/D3-type/1.png, id=38, 963.6pt x 722.7pt>
+File: images/D3-type/1.png Graphic file (type png)
+<use images/D3-type/1.png>
+Package pdftex.def Info: images/D3-type/1.png  used on input line 152.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/D3-type/1_label.png, id=39, 963.6pt x 722.7pt>
+File: images/D3-type/1_label.png Graphic file (type png)
+<use images/D3-type/1_label.png>
+Package pdftex.def Info: images/D3-type/1_label.png  used on input line 158.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/H2-type/1.png, id=40, 963.6pt x 722.7pt>
+File: images/H2-type/1.png Graphic file (type png)
+<use images/H2-type/1.png>
+Package pdftex.def Info: images/H2-type/1.png  used on input line 165.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+<images/H2-type/1_label.png, id=41, 963.6pt x 722.7pt>
+File: images/H2-type/1_label.png Graphic file (type png)
+<use images/H2-type/1_label.png>
+Package pdftex.def Info: images/H2-type/1_label.png  used on input line 171.
+(pdftex.def)             Requested size: 68.99895pt x 51.74103pt.
+ [7 <./images/x3000/1.png> <./images/x3000/1_label.png> <./images/x5000/1.png> 
+<./images/x5000/1_label.png> <./images/A-type/1.png> <./images/A-type/1_label.p
+ng> <./images/D3-type/1.png> <./images/D3-type/1_label.png> <./images/H2-type/1
+.png> <./images/H2-type/1_label.png>] (SteelSeg.bbl [8]
 Underfull \hbox (badness 5970) in paragraph at lines 90--95
 []\OT1/cmr/m/n/10 Geert Lit-jens, Thijs Kooi, Babak Eht-e-shami Be-jnordi, Ar-n
 aud
@@ -202,28 +218,31 @@ Underfull \hbox (badness 1540) in paragraph at lines 90--95
 \OT1/cmr/m/n/10 Jeroen A.W.M. van der Laak, Bram van Gin-neken, and Clara I.
  []
 
-) [8] [9] (SteelSeg.aux) ) 
+) [9] (SteelSeg.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2850 strings out of 476331
- 51770 string characters out of 5787765
- 1861660 words of memory out of 5000000
- 23306 multiletter control sequences out of 15000+600000
+ 2914 strings out of 476331
+ 53664 string characters out of 5787765
+ 1860660 words of memory out of 5000000
+ 23365 multiletter control sequences out of 15000+600000
  517522 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,8n,77p,2134b,485s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\blueb\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/blueb/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/blueb/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/blueb/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/blueb/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/blue
-b/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Us
-ers/blueb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb
-><C:/Users/blueb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mti10.pfb>
-Output written on SteelSeg.pdf (9 pages, 2469234 bytes).
+ 67i,8n,77p,2134b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\blueb\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/blueb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/blueb/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx9.pfb><C:/Users/blueb/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/blueb/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/blueb/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/blueb/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/blueb/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on SteelSeg.pdf (9 pages, 9815606 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

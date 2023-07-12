@@ -13,7 +13,7 @@
 
 \begin{abstract}
 	
-The micro-structures of ultra-high carbon steel, including constituents such as Martensite, Ferrite, and Bainite, provide crucial insights into the steel's physical properties. However, the manual analysis of these micro-graphs is labor-intensive and subjective. This paper introduces an automated approach using a UNet model for deep learning-based image segmentation of steel micro-structures. The model requires minimal annotated micro-graphic images for training and demonstrates superior performance in accurately segmenting steel micro-structures across different magnifications and steel types. This work contributes to the industrial application of micro-structure characterization by offering a scalable and efficient solution for metallographic segmentation.
+The micro-structures of advanced high-strength steel, including constituents such as Martensite, Ferrite, and Bainite, provide crucial insights into the steel's physical properties, but while their manual examination is laborious and prone to subjective bias the other alternatives are cost-prohibitive. Our proposed methodology involves the use of a UNet model to perform image segmentation of steel microstructures, automating the traditionally manual analysis process. This model requires a minimal amount of annotated micrographic images for training, yet it demonstrates excellent performance in segmenting steel microstructures. Importantly, our approach tries to maintain its accuracy across different magnifications and various types of steel, highlighting its versatility and generalizability. This paper contributes to the advancement of industrial processes by offering a scalable, efficient, and objective solution for the characterization of microstructures, significantly improving the metallographic segmentation process in the steel industry.
 
 \end{abstract}
 
@@ -35,13 +35,13 @@ The subsequent sections of this paper elaborate on our proposed methodology and 
 
 \section{Related Works}
 
-The application of deep learning techniques, particularly convolutional neural networks (CNNs), has shown promising results in various image segmentation tasks. The U-Net architecture, a type of CNN, has been widely used for medical image segmentation due to its ability to capture both local and global context by using a symmetric encoder-decoder structure \cite{cao2021swinunet}.
+The application of deep learning techniques, particularly convolutional neural networks (CNNs), has shown promising results in various image segmentation tasks. The UNet architecture, a type of CNN, has been widely used for medical image segmentation due to its ability to capture both local and global context by using a symmetric encoder-decoder structure \cite{cao2021swinunet}.
 
 In the realm of microstructure segmentation, previous studies have explored various methodologies to achieve accurate classification and segmentation results. Velichko et al. proposed a method based on data mining techniques, specifically extracting morphological features and utilizing a feature classification step using Support Vector Machines (SVMs). This approach was applied to cast iron and demonstrated the potential of machine learning in microstructural analysis \cite{sym13071176}. However, this method, while effective for simpler microstructures, may not be as efficient for complex steel microstructures due to the intricate nature and the subtle differences among different components.
 
 Similarly, Pauly et al. adopted a similar approach on a contrasted and etched dataset of steel acquired through SEM and LOM imaging \cite{LAI2009665}. However, the results yielded a relatively low accuracy of 48.89\% in microstructural classification due to the complex nature of substructures and the lack of discriminative features. This highlights the need for a more robust and efficient method for microstructure segmentation.
 
-Durmaz et al. proposed a multidisciplinary deep learning approach that equally considers specimen preparation and imaging \cite{Durmaz2021}. They trained distinct U-Net architectures with 30-50 micrographs of different imaging modalities and electron backscatter diffraction-informed annotations. The study focused on the challenging task of lath-bainite segmentation in complex-phase steel, achieving accuracies of 90\% that rival expert segmentations. While this approach has shown promising results, it requires a large number of annotated images for training, which may not always be feasible in practical scenarios.
+Durmaz et al. proposed a multidisciplinary deep learning approach that equally considers specimen preparation and imaging \cite{Durmaz2021}. They trained distinct UNet architectures with 30-50 micrographs of different imaging modalities and electron backscatter diffraction-informed annotations. The study focused on the challenging task of lath-bainite segmentation in complex-phase steel, achieving accuracies of 90\% that rival expert segmentations. While this approach has shown promising results, it requires a large number of annotated images for training, which may not always be feasible in practical scenarios.
 
 In contrast to these previous works, our proposed method aims to provide a scalable solution that requires only a small number of annotated images for training. We leverage different augmentation strategies to increase the diversity of our training data, thereby enhancing the robustness and generalizability of our model. Furthermore, our approach is designed to handle different magnified images and steel types, making it more versatile and applicable to a wider range of scenarios.
 
@@ -58,12 +58,12 @@ Due to the heterogenous material properties in these metallographic images, accu
 
 While manual annotation of metallographic images is a labor-intensive and time-consuming, producing EBSD images is cost-prohibitive and not suitable for more frequent analysis. As a result, there is a scarcity of large, labeled datasets specifically tailored for microstructure segmentation \cite{Roberts2019}. This limitation hinders the application of supervised learning methods, which typically require ample training data to achieve optimal performance.
 
-\subsection{Why U-Net: An Ideal Choice for Microstructure Segmentation}
+\subsection{Why UNet: An Ideal Choice for Microstructure Segmentation}
 
-The choice of an appropriate model is crucial for achieving accurate results in steel image segmentation. Given the challenges specific to steel microstructure segmentation, we selected the U-Net architecture \cite{ronneberger2015unet} for its suitability.
+The choice of an appropriate model is crucial for achieving accurate results in steel image segmentation. Given the challenges specific to steel microstructure segmentation, we selected the UNet architecture \cite{ronneberger2015unet} for its suitability.
 
-U-Net, a convolutional neural network (CNN) architecture, has demonstrated exceptional performance in segmentation tasks, particularly in capturing fine details and handling varying scales of structures. It was originally designed for biomedical image segmentation, where the availability of annotated training data is often limited, and the need for detailed segmentation is high. These characteristics make U-Net an ideal choice for the segmentation of steel microstructures.The U-Net architecture is characterized by its U-shaped design, which consists of a contracting path to capture context and a symmetric expanding path that allows precise localization. This design enables the model to preserve fine-grained details while capturing global context, making it suitable for steel microstructure segmentation. Another key feature of U-Net is the incorporation of skip connections, which allow the fusion of features from multiple scales. This enhances the model's ability to capture intricate details and accurately segment complex structures, a crucial requirement in steel microstructure segmentation.
-Furthermore, U-Net is designed to work with very few training images and yields more precise segmentations. This is particularly beneficial in our case, where the availability of pixel-wise labels generated through EBSD is limited.
+UNet, a convolutional neural network (CNN) architecture, has demonstrated exceptional performance in segmentation tasks, particularly in capturing fine details and handling varying scales of structures. It was originally designed for biomedical image segmentation, where the availability of annotated training data is often limited, and the need for detailed segmentation is high. These characteristics make UNet an ideal choice for the segmentation of steel microstructures.The UNet architecture is characterized by its U-shaped design, which consists of a contracting path to capture context and a symmetric expanding path that allows precise localization. This design enables the model to preserve fine-grained details while capturing global context, making it suitable for steel microstructure segmentation. Another key feature of UNet is the incorporation of skip connections, which allow the fusion of features from multiple scales. This enhances the model's ability to capture intricate details and accurately segment complex structures, a crucial requirement in steel microstructure segmentation.
+Furthermore, UNet is designed to work with very few training images and yields more precise segmentations. This is particularly beneficial in our case, where the availability of pixel-wise labels generated through EBSD is limited.
 
 \subsection{Dataset}
 
@@ -95,7 +95,7 @@ Labeling of the SEM images was accomplished using a superpixel labeling method. 
 		\caption{EBSD and Superpixel labeling }
 		\label{fig:image2}
 	\end{subfigure}
-	\caption{x2700 magnified E type steel image and its corresponding label}
+	\caption{x2700 magnified E-type steel image and its corresponding label}
 	\label{fig:combined}
 \end{figure}
 
@@ -105,6 +105,85 @@ In the training phase of our study, we utilized five out of the six E-type steel
 To evaluate the model's performance and its ability to generalize, we extended our testing to include steel images magnified at higher magnifications of 3000x and 5000x. The ability to accurately segment images at these higher magnifications is crucial, as it enables the detailed analysis of complex microstructures that are typically observed at these scales.
 
 Furthermore, to test the model's versatility and its effectiveness across various steel types, our testing dataset was expanded to include images of A-type, H2-type, and D3-type steels. These additional steel types have unique microstructural characteristics that pose different challenges to image segmentation. By testing the model across these diverse types of steel, we aim to validate its robustness and its potential for broad applicability in industrial settings.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/x3000/1.png}
+		\caption{x3000 SEM}
+		\label{fig:image2.1.1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/x3000/1_label.png}
+		\caption{x3000 label}
+		\label{fig:image2.1.2}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/x5000/1.png}
+		\caption{x5000 SEM}
+		\label{fig:image2.2.1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/x5000/1_label.png}
+		\caption{x5000 label}
+		\label{fig:image2.2.2}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/A-type/1.png}
+		\caption{A-type SEM}
+		\label{fig:image2.3.1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/A-type/1_label.png}
+		\caption{A-type label}
+		\label{fig:image2.3.2}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/D3-type/1.png}
+		\caption{D3-type SEM}
+		\label{fig:image2.4.1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/D3-type/1_label.png}
+		\caption{D3-type label}
+		\label{fig:image2.4.2}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/H2-type/1.png}
+		\caption{H2-type SEM}
+		\label{fig:image2.5.1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.2\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{images/H2-type/1_label.png}
+		\caption{H2-type label}
+		\label{fig:image2.5.2}
+	\end{subfigure}
+	\caption{Sample images of various steel and magnification types used during inference.}
+	\label{fig:combined}
+\end{figure}
+
+It's worth emphasizing that the images magnified at 3000x and 5000x originate from the same E-type steel that was used to train our model. This inclusion demonstrates the model's capacity to effectively scale across varied magnification levels, maintaining its segmentation accuracy even at high magnifications that reveal more intricate microstructures.
+
+Furthermore, the incorporation of A-type, D3-type, and H2-type steel images, all magnified at 5000x, underscores the model's capability to generalize across different steel types. Despite these steel types featuring distinct microstructural characteristics compared to the E-type steel used in training, the model is able to accurately identify and segment their microstructures. This ability to generalize over various steel types suggests the model's potential for broad applicability in real-world industrial contexts, well beyond its initial training data.
+
+\section{Methodology}
+In the following section, we detail the methodology used in our study, which is designed to address the challenges associated with the segmentation of steel microstructures. The core of our approach involves three key components: the model architecture, the augmentation strategies, and the training process.
+
+\subsection{Model Architecture}
 
 
 \bibliography{reference}
