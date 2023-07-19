@@ -26,7 +26,7 @@
 \citation{Roberts2019}
 \citation{ronneberger2015unet}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Why UNet: An Ideal Choice for Microstructure Segmentation}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Dataset}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Dataset Characteristics and Composition}{5}{}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:image1}{{1a}{6}}
 \newlabel{sub@fig:image1}{{a}{6}}
@@ -56,6 +56,79 @@
 \newlabel{sub@fig:image2.5.2}{{j}{7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Sample images of various steel and magnification types used during inference.\relax }}{7}{}\protected@file@percent }
 \newlabel{fig:combined}{{2}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Underlying U-Net Model: Design and Functionality}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces UNet architecture\relax }}{8}{}\protected@file@percent }
+\newlabel{fig:imageModel}{{3}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Data Augmentation Techniques and Rationale}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Learning Process and Parameter Settings}{10}{}\protected@file@percent }
+\citation{blurPooling}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimentation}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Evaluation Metrics}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Experiment Setup}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Experimental Results}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Inference on Same Steel and Same Magnification}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Accuracy and Dice measurements of test image\relax }}{13}{}\protected@file@percent }
+\newlabel{fig:samesteelsamemag-orig}{{4a}{14}}
+\newlabel{sub@fig:samesteelsamemag-orig}{{a}{14}}
+\newlabel{fig:samesteelsamemag-label}{{4b}{14}}
+\newlabel{sub@fig:samesteelsamemag-label}{{b}{14}}
+\newlabel{fig:samesteelsamemag-pred}{{4c}{14}}
+\newlabel{sub@fig:samesteelsamemag-pred}{{c}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces (a) x2700 magnified E type SEM test image (b) Corresponding label image by EBSD (c) Image predicted by our model.\relax }}{14}{}\protected@file@percent }
+\newlabel{fig:samesteelsamemag}{{4}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Inference on Same Steel with Different Magnification}{14}{}\protected@file@percent }
+\newlabel{fig:samesteeldiffmag3K-orig}{{5a}{14}}
+\newlabel{sub@fig:samesteeldiffmag3K-orig}{{a}{14}}
+\newlabel{fig:samesteeldiffmag3K-label}{{5b}{14}}
+\newlabel{sub@fig:samesteeldiffmag3K-label}{{b}{14}}
+\newlabel{fig:samesteeldiffmag3K-pred}{{5c}{14}}
+\newlabel{sub@fig:samesteeldiffmag3K-pred}{{c}{14}}
+\newlabel{fig:samesteeldiffmag5K-orig}{{5d}{14}}
+\newlabel{sub@fig:samesteeldiffmag5K-orig}{{d}{14}}
+\newlabel{fig:samesteeldiffmag5K-label}{{5e}{14}}
+\newlabel{sub@fig:samesteeldiffmag5K-label}{{e}{14}}
+\newlabel{fig:samesteeldiffmag5K-pred}{{5f}{14}}
+\newlabel{sub@fig:samesteeldiffmag5K-pred}{{f}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (a), (b) x3000 magnified E type SEM test image and corresponding label; (d), (e) x5000 magnified E type SEM test image and corresponding label; (c), (f) Images predicted by our model.\relax }}{14}{}\protected@file@percent }
+\newlabel{fig:samesteeldiffmag}{{5}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Different metrics of predicted images of x3000 and x5000 E type steel\relax }}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Inference on Different Steel and Different Magnification}{15}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Different metrics of predicted images of different types of steel\relax }}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Ablation Studies}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Activation Function}{15}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Accuracy and dice measurements along with class-wise accuracy for models with different activation functions.\relax }}{15}{}\protected@file@percent }
+\newlabel{fig:A-type-orig}{{6a}{16}}
+\newlabel{sub@fig:A-type-orig}{{a}{16}}
+\newlabel{fig:A-type-label}{{6b}{16}}
+\newlabel{sub@fig:A-type-label}{{b}{16}}
+\newlabel{fig:A-type-pred}{{6c}{16}}
+\newlabel{sub@fig:A-type-pred}{{c}{16}}
+\newlabel{fig:H2-type-orig}{{6d}{16}}
+\newlabel{sub@fig:H2-type-orig}{{d}{16}}
+\newlabel{fig:H2-type-label}{{6e}{16}}
+\newlabel{sub@fig:H2-type-label}{{e}{16}}
+\newlabel{fig:H2-type-pred}{{6f}{16}}
+\newlabel{sub@fig:H2-type-pred}{{f}{16}}
+\newlabel{fig:D3-type-orig}{{6g}{16}}
+\newlabel{sub@fig:D3-type-orig}{{g}{16}}
+\newlabel{fig:D3-type-label}{{6h}{16}}
+\newlabel{sub@fig:D3-type-label}{{h}{16}}
+\newlabel{fig:D3-type-pred}{{6i}{16}}
+\newlabel{sub@fig:D3-type-pred}{{i}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces (a), (b) x5000 magnified A type SEM test image and corresponding label; (d), (e) x5000 magnified D3 type SEM test image and corresponding label; (g), (h) x5000 magnified H2 type SEM test image and corresponding label; (c), (f) and(i) Images predicted by our model.\relax }}{16}{}\protected@file@percent }
+\newlabel{fig:diffsteeldiffmag}{{6}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Effects of Blur Pooling}{16}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Accuracy and dice measurements along with class-wise accuracy for models with different Blur pooling layers.\relax }}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.3}Loss Functions}{17}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Accuracy and dice measurements along with class-wise accuracy for models with different loss functions.\relax }}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.4}Classification with Boundary Class}{17}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Accuracy and dice measurements along with class-wise accuracy for models with boundary class and non-boundary class.\relax }}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Experimental Results Analysis and Interpretation}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Challenges and Limitations}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Factors Contributing to Performance Variations}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{18}{}\protected@file@percent }
 \bibdata{reference}
 \bibcite{ALLAIN2004158}{1}
 \bibcite{tripSteels}{2}
@@ -68,7 +141,6 @@
 \bibcite{gonzalez2008digital}{9}
 \bibcite{GoodBengCour16}{10}
 \bibcite{HARALICK1985100}{11}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{8}{}\protected@file@percent }
 \bibcite{NIPS2012_imagenet}{12}
 \bibcite{LAI2009665}{13}
 \bibcite{lasi2014industry}{14}
@@ -80,5 +152,6 @@
 \bibcite{russel2010}{20}
 \bibcite{shen2017}{21}
 \bibcite{cv_algandapp}{22}
+\bibcite{blurPooling}{23}
 \bibstyle{plain}
-\gdef \@abspage@last{9}
+\gdef \@abspage@last{21}

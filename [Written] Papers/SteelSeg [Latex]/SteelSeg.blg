@@ -12,45 +12,45 @@ I'm skipping whatever remains of this entry
 Warning--empty title in lasi2014industry
 Warning--empty journal in lasi2014industry
 Warning--empty year in lasi2014industry
-You've used 22 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            642 strings with 8336 characters,
-and the built_in function-call counts, 7815 in all, are:
-= -- 689
-> -- 548
+            648 strings with 8500 characters,
+and the built_in function-call counts, 8126 in all, are:
+= -- 717
+> -- 571
 < -- 1
-+ -- 218
-- -- 192
-* -- 633
-:= -- 1381
-add.period$ -- 64
-call.type$ -- 22
-change.case$ -- 157
++ -- 227
+- -- 200
+* -- 658
+:= -- 1439
+add.period$ -- 67
+call.type$ -- 23
+change.case$ -- 164
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 230
-empty$ -- 518
-format.name$ -- 192
-if$ -- 1550
+cite$ -- 26
+duplicate$ -- 240
+empty$ -- 536
+format.name$ -- 200
+if$ -- 1610
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 22
-newline$ -- 110
-num.names$ -- 46
-pop$ -- 172
+int.to.str$ -- 23
+missing$ -- 23
+newline$ -- 115
+num.names$ -- 48
+pop$ -- 177
 preamble$ -- 1
-purify$ -- 138
+purify$ -- 144
 quote$ -- 0
-skip$ -- 156
+skip$ -- 164
 stack$ -- 0
-substring$ -- 307
-swap$ -- 23
+substring$ -- 312
+swap$ -- 24
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 84
 warning$ -- 3
-while$ -- 56
-width$ -- 24
-write$ -- 234
+while$ -- 58
+width$ -- 25
+write$ -- 245
 (There was 1 error message)

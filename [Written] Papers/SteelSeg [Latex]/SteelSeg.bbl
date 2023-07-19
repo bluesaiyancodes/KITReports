@@ -129,4 +129,9 @@ Richard Szeliski.
 \newblock {\em Computer Vision: Algorithms and Applications}.
 \newblock Springer-Verlag, Berlin, Heidelberg, 1st edition, 2010.
 
+\bibitem{blurPooling}
+Phuong Thi~Le, Tuan Pham, Yi-Chiung Hsu, and Jia-Ching Wang.
+\newblock Convolutional blur attention network for cell nuclei segmentation.
+\newblock {\em Sensors}, 22(4), 2022.
+
 \end{thebibliography}
