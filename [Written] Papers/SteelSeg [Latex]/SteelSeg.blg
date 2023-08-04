@@ -5,52 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Database file #1: reference.bib
-I was expecting a `,' or a `}'---line 33 of file reference.bib
- :  title = ""
- :            Industry 4",
-I'm skipping whatever remains of this entry
-Warning--empty title in lasi2014industry
 Warning--empty journal in lasi2014industry
-Warning--empty year in lasi2014industry
 You've used 23 entries,
             2118 wiz_defined-function locations,
-            648 strings with 8500 characters,
-and the built_in function-call counts, 8126 in all, are:
-= -- 717
-> -- 571
+            652 strings with 8875 characters,
+and the built_in function-call counts, 8481 in all, are:
+= -- 761
+> -- 591
 < -- 1
-+ -- 227
-- -- 200
-* -- 658
-:= -- 1439
-add.period$ -- 67
++ -- 236
+- -- 208
+* -- 697
+:= -- 1501
+add.period$ -- 70
 call.type$ -- 23
-change.case$ -- 164
+change.case$ -- 170
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 240
-empty$ -- 536
-format.name$ -- 200
-if$ -- 1610
+cite$ -- 24
+duplicate$ -- 244
+empty$ -- 551
+format.name$ -- 208
+if$ -- 1675
 int.to.chr$ -- 0
 int.to.str$ -- 23
 missing$ -- 23
-newline$ -- 115
+newline$ -- 118
 num.names$ -- 48
-pop$ -- 177
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 148
 quote$ -- 0
-skip$ -- 164
+skip$ -- 166
 stack$ -- 0
-substring$ -- 312
+substring$ -- 378
 swap$ -- 24
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 3
-while$ -- 58
+type$ -- 86
+warning$ -- 1
+while$ -- 63
 width$ -- 25
-write$ -- 245
-(There was 1 error message)
+write$ -- 253
+(There was 1 warning)
