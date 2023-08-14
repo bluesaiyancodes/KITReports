@@ -47,7 +47,18 @@ https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_
 https://lightning.ai/docs/pytorch/stable/notebooks/course_UvA-DL/02-activation-functions.html
 
 
+#### Data Augmentation
+https://www.kaggle.com/code/bguberfain/elastic-transform-for-data-augmentation
+https://medium.com/analytics-vidhya/augment-your-data-easily-with-pytorch-313f5808fc8b
+
 
 #### test time augmentation
 
 https://github.com/qubvel/ttach
+
+
+#### Class Imbalance
+https://towardsdatascience.com/how-to-tackle-class-imbalance-without-resampling-47bbeb2180aa
+
+#### CNN Kernels
+https://towardsdatascience.com/latest-in-cnn-kernels-for-large-image-models-b48b27e75638
